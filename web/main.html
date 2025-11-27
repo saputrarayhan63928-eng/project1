@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kasir sederhana</title>
+    <link rel="stylesheet" href="../style/main.css">
+</head>
+<body>
+    <header>
+        <div>
+            <h2>Selamat Datang di aplikasi Kasir sederhana</h2>
+            <p id="inputnamakasir"></p>
+        </div>
+        <div id="kiri">
+            <label for="nama">Masukkan Level Akses</label><br>
+            <input type="text" id="namabtn" placeholder="Contoh : Admin"><br>
+            <button id="inputnamabtn">Login</button>
+        </div>
+    </header>
+        <main>
+            <div id="displaybarang">
+                <h1>Produk Barang</h1>
+                <button id="add" onclick="togglePopup(1)">ADD</button>
+                <div id="databarang">
+                </div>
+            </div>
+            <div id="totalbarang">
+                <h1>Total Harga Produk</h1>
+                <p id="pesan"></p>
+                <p id="harga"></p>
+                <div id="totalhargaproduk"></div>
+            </div>
+            <div id="typebayar" class="pay-type-container">
+            <label for="bayar">Pembayaran</label>        
+            <div class="toggle-pay-wrapper">
+            <button class="toggle-pay active" data-type="cash" id="btnCash">Cash</button>
+            <button class="toggle-pay" data-type="transfer" id="btnTransfer">Transfer</button>
+            </div>
+            <input type="number" id="inputuang" placeholder="Rp 00000">
+            <button id="bayatbtn" type="button">Mulai Pembayaran</button>
+            </div>
+            <div>
+                <h1>Hasil Akhir</h1>
+
+            </div>
+        </main>
+    <!-- popup -->
+     <div id="popupModal1" class="modal hidden">
+        <div class="modal-content">
+            <span class="close-btn" data-target="1" >&times;</span>
+            <section>
+                <h2>Add Product</h2>
+                <br>
+                <label for="productId">ID Produk</label>
+                <input type="text" id="productId" placeholder="Masukkan ID produk" required />
+                <br>
+                <br>
+                <label for="productName">Nama Produk</label>
+                <input type="text" id="productName" placeholder="Masukkan nama produk" required />
+                <br>
+                <br>
+                <label for="productPrice">Harga (Rp)</label>
+                <input type="number" id="productPrice" placeholder="Masukkan harga produk" required />
+                <br>
+                <br>
+                <label for="stock">Stok</label>
+                <input type="number" id="stockinput" placeholder="Stock">
+                <br>
+                <br>
+                <label for="rating">Rating</label>
+                <input type="number" id="ratinginput" placeholder="Rating">
+                <br>
+                <br>
+                <button id="btnSubmitProduct">Submit</button>
+            </section>
+        </div>
+    </div>
+    <script  type="module" src="../js/main.js"></script>
+</body>
+</html>

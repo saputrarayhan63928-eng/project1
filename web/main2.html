@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Todo CRUD - DummyJSON (Fetch API)</title>
+  <link rel="stylesheet" href="../style/main2.css">
+</head>
+<body>
+  <div class="app" id="app">
+    <div class="panel">
+      <h1>Todo App </h1>
+      <p class="lead">Mohon Maap Ganti Tema</p>
+
+      <form class="new-todo" id="formAdd">
+        <input id="newTodoInput" placeholder="Tambahkan tugas baru..." type="text" required />
+        <button type="submit">Tambah</button>
+      </form>
+
+      <div class="stats" id="stats">
+        <div class="stat" id="statTotal">Total: —</div>
+        <div class="stat" id="statCompleted">Selesai: —</div>
+        <div class="stat" id="statPending">Belum: —</div>
+        <div class="stat" id="statUsers">Users unik: —</div>
+      </div>
+
+      <div style="margin-top:12px">
+        <button id="refreshBtn" class="btn-small">🔄 Refresh</button>
+        <button id="addSampleBtn" class="btn-small">➕ Tambah sample</button>
+        <span class="small" style="margin-left:8px">Note: perubahan di server bersifat simulasi (tidak permanen).</span>
+      </div>
+    </div>
+
+    <div class="list-wrap">
+      <div class="controls">
+        <input id="search" type="search" placeholder="Cari teks..." />
+        <select id="filter">
+          <option value="all">Semua</option>
+          <option value="completed">Selesai</option>
+          <option value="pending">Belum</option>
+        </select>
+        <select id="sort">
+          <option value="id_asc">ID ↑</option>
+          <option value="id_desc">ID ↓</option>
+          <option value="alpha_asc">A → Z</option>
+          <option value="alpha_desc">Z → A</option>
+        </select>
+        <button id="clearLocal" class="btn-small">🧹 Clear Client</button>
+      </div>
+
+      <ul class="todo-list" id="todoList">
+       
+      </ul>
+    </div>
+
+    <footer class="readme" id="readme">
+    
+    </footer>
+  </div>
+
+  <script src="../js/main2.js"></script>
+</body>
+</html>
