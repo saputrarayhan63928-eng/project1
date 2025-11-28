@@ -9,3 +9,7 @@ fitur : - register
          - DOM Management (render list, update, input handling, event handling)
 
          link vercel : https://project1-nine-mocha.vercel.app/
+
+         link PPT : https://www.canva.com/design/DAG58WOlLKo/MKL1E-zWymKX-GFW1UnaXg/edit?utm_content=DAG58WOlLKo&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton
+
+         link youtube : https://youtu.be/whdnvdYpmX0?si=p7bhCbjj-eY1EJfR
